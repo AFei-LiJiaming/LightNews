@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorAccent">#FF4081</color>
+
+
+    <color name="colorMain">#f54343</color>
+    <color name="color3">#333333</color>
+    <color name="colorEtHint">#aeaeae</color>
+    <color name="colorLine">#e5e5e5</color>
+    <color name="colorBG">#f0f0f0</color>
+    <color name="colorTitle">#1a1a1a</color>
+    <color name="colorTime">#a1a1a1</color>
+    <color name="colorWhite">#ffffff</color>
+    <color name="text_bottom_comment">#9B9B9B</color>
+    <color name="text_bottom_tm">#00000000</color>
+    <color name="dialog_bg">#f5f5f5</color>
+    <color name="tab_text">#5e5e5e</color>
+    <color name="colorAuthor">#ababab</color>
+
+</resources>

@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">轻咨讯</string>
+
+    <string name="menu_setting">设置</string>
+    <string name="menu_collection">我的收藏</string>
+    <string name="dialog_cancel_collection">是否移除该条收藏？</string>
+    <string name="dialog_add_collection">是否收藏该条新闻？</string>
+    <string name="tv_collect_title">我的收藏</string>
+    <string name="tv_toReader_title">关于</string>
+    <string name="tv_reader_content">一个简单易用的新闻App</string>
+    <string name="tv_contact">By 310 Group</string>
+    <string name="tv_history_title">我的足迹</string>
+    <string name="tv_test">新闻标题\n可以很长.</string>
+</resources>

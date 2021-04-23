@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="@dimen/dp_280"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@drawable/shape_dialog_re_bg">
+
+    <TextView
+        android:id="@+id/dialog_msg"
+        android:layout_width="@dimen/dp_280"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:lineSpacingExtra="@dimen/dp_4"
+        android:minHeight="@dimen/dp_70"
+        android:textColor="@color/color3"
+        android:textSize="@dimen/sp_18"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="确认是否退出当前账号？" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="@dimen/dp_1"
+        android:background="@color/colorDialogLine"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/dialog_msg" />
+
+
+    <TextView
+        android:id="@+id/dialog_cancel"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/dp_35"
+        android:layout_marginBottom="@dimen/dp_20"
+        android:layout_marginLeft="@dimen/dp_20"
+        android:layout_marginRight="@dimen/dp_12"
+        android:layout_marginTop="@dimen/dp_21"
+        android:background="@drawable/shape_dialog_msg_cancel_bg"
+        android:gravity="center"
+        android:text="@string/dialog_cancel_title"
+        android:textColor="#666666"
+        android:textSize="@dimen/sp_14"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="@id/dialog_msg"
+        app:layout_constraintRight_toLeftOf="@id/dialog_ok"
+        app:layout_constraintTop_toBottomOf="@id/dialog_msg" />
+
+
+    <TextView
+        android:id="@+id/dialog_ok"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/dp_35"
+        android:layout_marginBottom="@dimen/dp_20"
+        android:layout_marginLeft="@dimen/dp_12"
+        android:layout_marginRight="@dimen/dp_20"
+        android:layout_marginTop="@dimen/dp_21"
+        android:background="@drawable/shape_dialog_msg_ok_bg"
+        android:gravity="center"
+        android:text="@string/dialog_ok_title"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/sp_14"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/dialog_cancel"
+        app:layout_constraintRight_toRightOf="@id/dialog_msg"
+        app:layout_constraintTop_toBottomOf="@id/dialog_msg" />
+</android.support.constraint.ConstraintLayout>
+

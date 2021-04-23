@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/container1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_120"
+        android:background="@drawable/selector_bg">
+
+        <com.AFei.LightNews.ui.MyView.RoundImageView
+            android:id="@+id/item_img"
+            android:layout_width="@dimen/dp_110"
+            android:layout_height="@dimen/dp_73"
+            android:layout_marginLeft="@dimen/dp_14"
+            android:adjustViewBounds="true"
+            android:background="@color/colorBG"
+            android:padding="@dimen/dp_1"
+            android:scaleType="centerCrop"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:src="@drawable/img_test" />
+
+
+        <TextView
+            android:id="@+id/item_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_18"
+            android:layout_marginRight="@dimen/dp_14"
+            android:lineSpacingExtra="@dimen/dp_6"
+            android:maxLines="2"
+            android:textColor="@color/colorTitle"
+            android:textSize="@dimen/sp_15"
+            app:layout_constraintBottom_toTopOf="@id/item_author"
+            app:layout_constraintLeft_toRightOf="@id/item_img"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@id/item_img"
+            app:layout_constraintVertical_chainStyle="packed"
+            tools:text="@string/tv_test" />
+
+
+        <TextView
+            android:id="@+id/item_author"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_18"
+            android:layout_marginTop="@dimen/dp_15"
+            android:maxLines="1"
+            android:textColor="@color/colorAuthor"
+            android:textSize="@dimen/sp_12"
+            app:layout_constraintBottom_toBottomOf="@id/item_img"
+            app:layout_constraintLeft_toRightOf="@id/item_img"
+            app:layout_constraintTop_toBottomOf="@id/item_title"
+            tools:text="@string/app_name" />
+
+        <TextView
+            android:id="@+id/item_time"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_marginRight="@dimen/dp_14"
+            android:gravity="bottom"
+            android:maxLines="1"
+            android:textColor="@color/colorTime"
+            android:textSize="@dimen/sp_10"
+            app:layout_constraintBottom_toBottomOf="@id/item_author"
+            app:layout_constraintLeft_toRightOf="@id/item_author"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@id/item_author"
+            tools:text="@string/app_name" />
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dp_3"
+            android:background="@color/colorBG"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent" />
+        <ImageView
+            android:id="@+id/none_interest_iv"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_marginBottom="@dimen/dp_15"
+            android:layout_marginRight="@dimen/dp_13"
+            android:padding="@dimen/dp_8"
+            android:src="@drawable/none_interest"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:clickable="true"
+            android:focusable="true"/>
+
+    </android.support.constraint.ConstraintLayout>
+    <RelativeLayout
+        android:id="@+id/item_rl_tail_toast"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_37"
+        android:background="@color/colorBG"
+        android:layout_below="@+id/container1"
+        >
+        <TextView
+            android:layout_marginTop="@dimen/dp_8"
+            android:id="@+id/tv_tail_toast"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="上次看到这里  点击刷新"
+            android:textColor="#3393D5"
+            android:textSize="13sp"
+            android:clickable="true"
+            android:focusable="true"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/item_rl_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_37"
+        android:background="@color/colorBG"
+        android:layout_below="@+id/container1"
+        >
+        <TextView
+            android:layout_marginTop="@dimen/dp_8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="~已经到底了~"
+            android:textColor="@color/colorTime"
+            android:textSize="13sp" />
+
+    </RelativeLayout>
+</RelativeLayout>

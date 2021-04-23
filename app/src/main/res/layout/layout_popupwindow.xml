@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerInParent="true"
+    android:orientation="vertical"
+    >
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:gravity="center_vertical"
+            android:paddingBottom="8dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="8dp"
+            android:text="可选理由，精准屏蔽"
+            android:textColor="@color/color3"
+            android:textSize="@dimen/dp_12"/>
+
+
+        <TextView
+            android:id="@+id/btn_commit"
+            android:layout_width="88dp"
+            android:layout_height="24dp"
+            android:gravity="center"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/orange_corners_bg"
+            android:text="不感兴趣"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/dp_12"/>
+
+
+    </FrameLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <TextView
+            android:id="@+id/tv_reason1"
+            style="@style/text_popup_not_interest"
+            android:text="重复、旧闻"
+            />
+
+        <TextView
+            android:id="@+id/tv_reason2"
+            style="@style/text_popup_not_interest"
+            android:text="内容质量差"
+
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="12dp"
+        >
+
+        <TextView
+            android:id="@+id/tv_reason3"
+            style="@style/text_popup_not_interest"
+            android:text="来源"
+            />
+
+        <TextView
+            style="@style/text_popup_not_interest"
+            android:id="@+id/tv_reason4"
+            android:text="低俗、色情"
+            />
+    </LinearLayout>
+</LinearLayout>

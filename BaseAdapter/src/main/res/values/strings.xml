@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">BaseAdapter</string>
+    <string name="alert_no_net">网络异常</string>
+    <string name="alert_no_net_repeat">网络异常,请检查网络后重试...</string>
+    <string name="dialog_cancel_title">取消</string>
+    <string name="dialog_ok_title">确定</string>
+</resources>

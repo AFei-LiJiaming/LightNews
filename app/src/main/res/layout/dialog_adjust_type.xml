@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp_128"
+    android:background="@color/dialog_bg">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp_88"
+        android:layout_marginLeft="@dimen/dp_20">
+
+        <RelativeLayout
+            android:layout_width="@dimen/dp_58"
+            android:layout_height="@dimen/dp_58"
+            android:layout_marginTop="@dimen/dp_15"
+            android:layout_marginLeft="@dimen/dp_12"
+            android:id="@+id/small_rl">
+
+            <TextView
+                android:id="@+id/small_tv"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_38"
+                android:text="小"
+                android:textSize="18sp"
+                android:textColor="@color/colorTitle"
+                android:gravity="center" />
+
+            <ImageView
+                android:id="@+id/small_iv"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_28"
+                android:layout_marginTop="@dimen/dp_28"
+                android:src="@drawable/spot_grey"
+                android:padding="@dimen/dp_5" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="@dimen/dp_58"
+            android:layout_height="@dimen/dp_58"
+            android:layout_marginTop="@dimen/dp_15"
+            android:layout_marginLeft="@dimen/dp_90"
+            android:id="@+id/normal_rl">
+
+            <TextView
+                android:id="@+id/normal_tv"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_38"
+                android:text="标准"
+                android:textSize="18sp"
+                android:textColor="@color/colorTitle"
+                android:gravity="center" />
+
+            <ImageView
+                android:id="@+id/normal_iv"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_28"
+                android:layout_marginTop="@dimen/dp_28"
+                android:src="@drawable/spot_grey"
+                android:padding="@dimen/dp_5" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="@dimen/dp_58"
+            android:layout_height="@dimen/dp_58"
+            android:layout_marginTop="@dimen/dp_15"
+            android:layout_marginLeft="@dimen/dp_168"
+            android:id="@+id/largest_rl">
+
+            <TextView
+                android:id="@+id/largest_tv"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_38"
+                android:text="大"
+                android:textSize="18sp"
+                android:textColor="@color/colorTitle"
+                android:gravity="center" />
+
+            <ImageView
+                android:id="@+id/largest_iv"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_28"
+                android:layout_marginTop="@dimen/dp_28"
+                android:src="@drawable/spot_grey"
+                android:padding="@dimen/dp_5" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="@dimen/dp_58"
+            android:layout_height="@dimen/dp_58"
+            android:layout_marginTop="@dimen/dp_15"
+            android:layout_marginLeft="@dimen/dp_246"
+            android:id="@+id/large_rl">
+
+            <TextView
+                android:id="@+id/large_tv"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_38"
+                android:text="超大"
+                android:textSize="18sp"
+                android:textColor="@color/colorTitle"
+                android:gravity="center" />
+
+            <ImageView
+                android:id="@+id/large_iv"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_28"
+                android:layout_marginTop="@dimen/dp_28"
+                android:src="@drawable/spot_grey"
+                android:padding="@dimen/dp_5" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/close_dialog_tv"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_40"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorWhite"
+        android:text="关闭"
+        android:textSize="15sp"
+        android:gravity="center"
+        android:textColor="@color/colorTitle"
+        android:textStyle="bold" />
+
+</RelativeLayout>
